@@ -4,21 +4,21 @@ namespace Utility_Program
 {
     class Program
     {
-        int Calculator(int a, int b, string action)
+        double Calculator(int a, int b, string action)
         {
-            if (action == "add")
+            if (action == "Add")
             {
                 return a + b;
             }
-            else if (action == "subtract")
+            else if (action == "Subtract")
             {
                 return a - b;
             }
-            else if (action == "multiply")
+            else if (action == "Multiply")
             {
                 return a * b;
             }
-            else if (action == "divide")
+            else if (action == "Divide")
             {
                 return a / b;
             }
@@ -47,7 +47,7 @@ namespace Utility_Program
                 Console.WriteLine("Enter the second number in the equation");
                 int Number2 = Convert.ToInt32(Console.ReadLine());
 
-                int Result = Calculator(Number1, Number2, Choice2);
+                double Result = Calculator(Number1, Number2, Choice2);
                 Console.WriteLine("The result is " + Result + "!");
             }
         }
